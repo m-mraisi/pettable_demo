@@ -1,0 +1,44 @@
+.hero-container {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  background-color: #f5f7fa;
+  padding: 50px;
+  text-align: center;
+  margin-top: 10px;
+  color: #13333d;
+}
+
+.intro-tile {
+  width: 60%;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.intro-par {
+  width: 60%;
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 50px;
+}
+
+@media screen and (max-width: 768px) {
+  .hero-container {
+    padding: 30px;
+  }
+
+  .intro-tile {
+    width: 100%;
+    font-size: 23px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+
+  .intro-par {
+    width: 100%;
+    font-size: 13px;
+    margin-bottom: 30px;
+  }
+}
