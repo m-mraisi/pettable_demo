@@ -5,7 +5,12 @@ import "./SubscribeForm.css";
 const SubscribeForm = () => {
   const [email, setEmail] = useState("");
   const [error, setError] = useState("");
+  const [selectedOption, setSelectedOption] = useState("ESA-Friendly Housing");
   const history = useHistory();
+
+  const handleOptionChange = (event) => {
+    setSelectedOption(event.target.value);
+  };
 
   const validateEmail = () => {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -29,10 +34,34 @@ const SubscribeForm = () => {
     >
       <h2 className="form-title">Subscribe to our product</h2>
       <div className="form-group">
-        <select id="subscription-plan" name="subscription-plan">
-          <option value="value1">ESA-Friendly Housing</option>
-          <option value="value2">Pet-Friendly Travel Accommodations</option>
-        </select>
+        <div id="subscription-plan" className="subscription-plan">
+          <button
+            type="button"
+            className={
+              selectedOption === "ESA-Friendly Housing" ? "selected" : ""
+            }
+            value="ESA-Friendly Housing"
+            id="btn-esa-housing"
+            name="btn-esa-housing"
+            onClick={handleOptionChange}
+          >
+            ESA-Friendly Housing
+          </button>
+          <button
+            type="button"
+            className={
+              selectedOption === "Pet-Friendly Travel Accommodations"
+                ? "selected"
+                : ""
+            }
+            value="Pet-Friendly Travel Accommodations"
+            id="btn-esa-travel"
+            name="btn-esa-travel"
+            onClick={handleOptionChange}
+          >
+            Pet-Friendly Travel Accommodations
+          </button>
+        </div>
         <div className="sub-form">
           <input
             type="email"

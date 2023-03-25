@@ -31,15 +31,27 @@ label {
   margin-bottom: 5px;
 }
 
-select {
-  font-size: 14px;
-  margin-top: 5px;
-  border: none;
+.subscription-plan {
+  display: flex;
   background-color: white;
-  border-radius: 10px;
-  padding: 12px;
-  width: 70%;
-  text-align: center;
+  border-radius: 8px;
+}
+
+.subscription-plan button {
+  background-color: #fff;
+  color: #333;
+  width: 50%;
+  border: none;
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.subscription-plan button.selected {
+  background-color: #256477;
+  color: #fff;
+  border-color: #256477;
 }
 
 .sub-form {
@@ -61,7 +73,6 @@ input {
   width: 15rem;
 }
 
-select:focus,
 input:focus {
   outline: none;
   border-color: #e8735b;
