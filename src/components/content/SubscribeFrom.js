@@ -15,7 +15,10 @@ const SubscribeForm = () => {
   const validateEmail = () => {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (emailRegex.test(email)) {
-      history.push("/thankyou");
+      history.push({
+        pathname: "/thankyou",
+        state: { subscriptionPlan: selectedOption },
+      });
     } else {
       setError("Please enter a valid email address.");
     }
