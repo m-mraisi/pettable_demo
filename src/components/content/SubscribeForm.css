@@ -3,7 +3,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  width: 60%;
+  width: 80%;
   margin: 20px auto;
   padding: 30px;
   background-color: #f5f7fa;
@@ -13,7 +13,7 @@
 }
 
 .form-title {
-  font-size: 18px;
+  font-size: 1.1vw;
 }
 
 .form-group {
@@ -24,11 +24,6 @@
   background-color: #f5f7fa;
   padding: 20px;
   border-radius: 10px;
-}
-
-label {
-  font-size: 18px;
-  margin-bottom: 5px;
 }
 
 .subscription-plan {
@@ -44,8 +39,9 @@ label {
   border: none;
   border-radius: 8px;
   padding: 10px;
-  font-size: 13px;
+  font-size: 0.7vw;
   cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .subscription-plan button.selected {
@@ -57,20 +53,20 @@ label {
 .sub-form {
   display: flex;
   background-color: white;
-  width: 100%;
+  width: 18vw;
   flex-direction: row;
   justify-content: space-between;
   border-radius: 10px;
 }
 
 input {
-  font-size: 14px;
+  font-size: 0.7vw;
   padding: 12px;
   padding-right: 30px;
   border-radius: 10px;
   border: none;
   margin-top: 5px;
-  width: 15rem;
+  width: 15vw;
 }
 
 input:focus {
@@ -80,7 +76,7 @@ input:focus {
 
 .submit-button {
   width: 10rem;
-  font-size: 13px;
+  font-size: 0.7vw;
   font-weight: bold;
   background-color: #e8735b;
   color: white;
@@ -101,21 +97,41 @@ input:focus {
     width: 90%;
   }
 
+  .form-title {
+    font-size: 18px;
+  }
+
+  .subscription-plan {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 12rem;
+    height: fit-content;
+  }
+  .subscription-plan button {
+    font-size: 8px;
+  }
+
   .form-group {
     grid-template-columns: 1fr;
     row-gap: 20px;
     padding: 10px;
   }
 
-  select {
+  .sub-form {
     width: 100%;
   }
 
   input {
     width: 100%;
+    font-size: 9px;
+    margin-top: auto;
+    margin-bottom: auto;
   }
 
   .submit-button {
-    width: 100%;
+    width: 60%;
+    font-size: 9px;
   }
 }
