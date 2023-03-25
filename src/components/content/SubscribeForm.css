@@ -3,7 +3,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  width: 80%;
+  width: 70%;
   margin: 20px auto;
   padding: 30px;
   background-color: #f5f7fa;
@@ -30,6 +30,7 @@
   display: flex;
   background-color: white;
   border-radius: 8px;
+  width: 18vw;
 }
 
 .subscription-plan button {
@@ -53,7 +54,7 @@
 .sub-form {
   display: flex;
   background-color: white;
-  width: 18vw;
+  width: 22vw;
   flex-direction: row;
   justify-content: space-between;
   border-radius: 10px;
@@ -61,12 +62,13 @@
 
 input {
   font-size: 0.7vw;
-  padding: 12px;
-  padding-right: 30px;
+  padding: 14px 10px;
   border-radius: 10px;
   border: none;
   margin-top: 5px;
   width: 15vw;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 input:focus {
@@ -82,7 +84,7 @@ input:focus {
   color: white;
   border-radius: 5px;
   border: none;
-  padding: 10px 20px;
+  padding: 10px 0px;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
 }
